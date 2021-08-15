@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+mypy = "*"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+pulp = "*"
+pandas = "*"
+matplotlib = "*"
+jupyter = "*"
+more-itertools = "*"
+scipy = "*"
+networkx = "*"
+camelot-py = "*"
+ortools = "*"
+fire = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+cmd = "python ./cryptarithm/main.py"
+test = "python -m pytest"
+typecheck = "mypy -p cryptarithm"
